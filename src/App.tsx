@@ -8,10 +8,10 @@ import Help from './png/Help.png';
 import Invite from './png/Invite a friend.png';
 import Vector from './png/Vector.png';
 import Edit from './png/Edit Button.png';
-import { Profilecard } from './components/Profilecard';
+import { ProfileCard } from './components/ProfileCard';
 
-const ProfilecardData = {
-  headerTittle: 'Profile',
+const Profilecarddata = {
+  headerTitle: 'Profile',
   lists: [
     'Account',
     'Chat Settings',
@@ -21,27 +21,27 @@ const ProfilecardData = {
     'Invite a friend',
   ],
   urlAvatar: ava,
-  urlsimage: [Key, Chat, Bell, Storage, Help, Invite],
+  urlsImage: [Key, Chat, Bell, Storage, Help, Invite],
   text: 'This is a small bio description to let users express themselves',
-  buttonurl: Vector,
-  tittleava: 'Jane Doe',
-  buttontext: 'Logout',
-  editurl: Edit,
+  buttonUrl: Vector,
+  titleAva: 'Jane Doe',
+  buttonText: 'Logout',
+  editUrl: Edit,
 };
 
 const App = () => {
   return (
     <div className="App">
-      <Profilecard
-        headerTittle={ProfilecardData.headerTittle}
-        lists={ProfilecardData.lists}
-        text={ProfilecardData.text}
-        urlAvatar={ProfilecardData.urlAvatar}
-        urlsimage={ProfilecardData.urlsimage}
-        buttonurl={ProfilecardData.buttonurl}
-        tittleava={ProfilecardData.tittleava}
-        buttontext={ProfilecardData.buttontext}
-        editurl={ProfilecardData.editurl}
+      <ProfileCard
+        headerTitle={Profilecarddata.headerTitle}
+        lists={Profilecarddata.lists}
+        text={Profilecarddata.text}
+        urlAvatar={Profilecarddata.urlAvatar}
+        urlsImage={Profilecarddata.urlsImage}
+        buttonUrl={Profilecarddata.buttonUrl}
+        titleAva={Profilecarddata.titleAva}
+        buttonText={Profilecarddata.buttonText}
+        editUrl={Profilecarddata.editUrl}
       />
     </div>
   );

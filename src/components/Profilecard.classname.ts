@@ -1,3 +1,3 @@
 import { cn } from '@bem-react/classname';
 
-export const cnProfilecard = cn('Profilecard');
+export const cnProfileCard = cn('ProfileCard');

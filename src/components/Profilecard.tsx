@@ -1,64 +1,64 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
 
-import { cnProfilecard } from './Profilecard.classname';
+import { cnProfileCard } from './ProfileCard.classname';
 
 import type { FC } from 'react';
 
-import './Profilecard.css';
+import './ProfileCard.css';
 
-type ProfilecardProps = {
-  headerTittle: string;
+type ProfileCardProps = {
+  headerTitle: string;
   lists: string[];
   text: string;
-  tittleava: string;
+  titleAva: string;
   urlAvatar: string;
-  urlsimage: string[];
-  buttonurl: string;
-  buttontext: string;
-  editurl: string;
+  urlsImage: string[];
+  buttonUrl: string;
+  buttonText: string;
+  editUrl: string;
 };
 
-const Profilecard: FC<ProfilecardProps> = ({
-  headerTittle,
+const ProfileCard: FC<ProfileCardProps> = ({
+  headerTitle,
   lists,
   text,
   urlAvatar,
-  urlsimage,
-  buttonurl,
-  tittleava,
-  buttontext,
-  editurl,
+  urlsImage,
+  buttonUrl,
+  titleAva,
+  buttonText,
+  editUrl,
 }) => {
   return (
-    <div className={cnProfilecard()}>
-      <header className={cnProfilecard('header')}>
-        <img className={cnProfilecard('header_image')} src={buttonurl}></img>
-        <p>{headerTittle}</p>
+    <div className={cnProfileCard()}>
+      <header className={cnProfileCard('Header')}>
+        <img className={cnProfileCard('Header_Image')} src={buttonUrl}></img>
+        <p>{headerTitle}</p>
       </header>
 
-      <div className={cnProfilecard('avatar')}>
-        <img src={urlAvatar} className={cnProfilecard('avatar_image')}></img>
-        <img className={cnProfilecard('edit_image')} src={editurl}></img>
-        <h1 className={cnProfilecard('avatar_tittle')}>{tittleava}</h1>
-        <p className={cnProfilecard('avatar_text')}>{text}</p>
+      <div className={cnProfileCard('Avatar')}>
+        <img src={urlAvatar} className={cnProfileCard('Avatar_Image')}></img>
+        <img className={cnProfileCard('Edit_Image')} src={editUrl}></img>
+        <h1 className={cnProfileCard('Avatar_Tittle')}>{titleAva}</h1>
+        <p className={cnProfileCard('Avatar_Text')}>{text}</p>
       </div>
 
-      <div className={cnProfilecard('list')}>
-        <div className={cnProfilecard('list-image')}>
-          {urlsimage.map((url) => (
-            <img className={cnProfilecard('image')} src={url}></img>
+      <div className={cnProfileCard('List')}>
+        <div className={cnProfileCard('List-Image')}>
+          {urlsImage.map((url) =>(
+            <img className={cnProfileCard('Image')} src={url}></img>
           ))}
         </div>
         <div>
           {lists.map((list) => (
-            <p className={cnProfilecard('list_text')}>{list}</p>
+            <p className={cnProfileCard('List_Text')}>{list}</p>
           ))}
         </div>
       </div>
-      <button className={cnProfilecard('button_footer')}>{buttontext}</button>
+      <button className={cnProfileCard('Button_Footer')}>{buttonText}</button>
     </div>
   );
 };
 
-export { Profilecard };
+export { ProfileCard };

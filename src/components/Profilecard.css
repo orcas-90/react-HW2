@@ -1,9 +1,9 @@
-.Profilecard{
+.ProfileCard{
     align-items: center;
     margin: 0px;
 
 }
-.Profilecard-header {
+.ProfileCard-Header {
     display: flex;
     align-items: center;
     margin: 0px;
@@ -17,29 +17,29 @@
 
 }
 
-.Profilecard-header_image {
+.ProfileCard-Header_Image {
     padding: 10px;
     margin-right: 20px;
 }
-.Profilecard-avatar {
+.ProfileCard-Avatar {
     display: flex;
     position: relative;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.Profilecard-avatar_image {
+.ProfileCard-Avatar_Image {
     border-radius: 15px;
 
     margin-top:30px;
 }
 
-.Profilecard-edit_image {
+.ProfileCard-Edit_Image {
     position: absolute;
     margin-top: 60px;
     margin-left: 160px;
 }
-.Profilecard-avatar_tittle {
+.ProfileCard-Avatar_Title {
     color: #505050;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
@@ -49,7 +49,7 @@
 
 
 }
-.Profilecard-avatar_text {
+.ProfileCard-Avatar_Text {
     color: #9F9F9F;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 10px;
@@ -60,14 +60,14 @@
     height: 30px;
     margin-top: 0px;
 }
-.Profilecard-list{
+.ProfileCard-List{
 display: flex;
 
 align-items: center;
 
 }
 
-.Profilecard-list-image{
+.ProfileCard-List-Image{
 
     display: flex;
     flex-direction: column;
@@ -78,7 +78,7 @@ align-items: center;
 
 
 }
-.Profilecard-list_text{
+.ProfileCard-List_Text{
     color:#505050;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
@@ -89,13 +89,13 @@ align-items: center;
     align-items: center;
 
 }
-.Profilecard-image{
+.ProfileCard-Image{
     align-items: center;
     margin-top: 24px;
     padding: 5px;
  }
 
- .Profilecard-button_footer{
+ .ProfileCard-Button_Footer{
     background-color: #F66D6D;
     border-radius: 10px;
     color:#FFFFFF;
